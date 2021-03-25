@@ -1,0 +1,27 @@
+#app-bar {
+    padding: 1vh;
+    border-bottom: 1px solid #cccccc;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+#menu-title {
+    font-weight: bold;
+    font-size: 14pt;
+    padding-left: 12px;
+}
+
+.cell-center {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#profile-pic {
+    background-color: #2CA6F3;
+    border-radius: 12px;
+    height: 40px;
+    width: 40px;
+}

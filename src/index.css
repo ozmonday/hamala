@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  background-color: #F3FAFF;
+  font-family: 'Manrope', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 11pt;
+}
+
+code {
+  font-family: 'Manrope', sans-serif;
+}

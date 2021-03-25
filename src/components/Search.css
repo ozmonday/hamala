@@ -1,0 +1,31 @@
+.search {
+    display: flex;
+    flex-direction: row;
+    background-color: #FAFAFC;
+    border-radius: 24px;
+    padding-left: 8px;
+    border: 1px solid #FAFAFC;
+}
+
+.search>input {
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border-radius: 12px;
+    padding: 8px 8px 8px 8px;
+    border: none;
+    font-size: 12pt;
+}
+
+.search>button {
+    border: none;
+    border-radius:  0 24px 24px 0;
+    background-color: #FAFAFC;
+    width: 60px;
+    outline: none;
+    cursor: pointer;
+}
+
+.search>button:active {
+    background-color: #F3FAFF;
+}

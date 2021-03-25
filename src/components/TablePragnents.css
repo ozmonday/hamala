@@ -1,0 +1,8 @@
+.table-container {
+    margin: 14px 0;
+    max-height: 64vh;
+}
+
+.table-head {
+    background-color: blue;
+}

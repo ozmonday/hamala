@@ -1,0 +1,29 @@
+.root-pragnents {
+    display: flex;
+    flex-direction: column;
+}
+
+.root-pragnents>span {
+    margin: 12px 0 12px 0;
+}
+
+.list-pragnents{
+    height: auto;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: white;
+}
+
+.head-list {
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cell {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
