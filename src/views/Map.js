@@ -14,7 +14,7 @@ export class Map extends Component {
 
     }
 
-    static subStateName = 'Map'
+    static subStateName = 'Geografis'
 
     componentDidMount() {
         //this.locaation.locate()

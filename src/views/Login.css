@@ -65,6 +65,14 @@
     background-color: #2CA6F3;
 }
 
+.masuk:hover {
+    background-color: rgb(61, 181, 255);
+    cursor: pointer;
+}
+
+.masuk:active {
+    background-color: rgb(32, 124, 182);
+}
 
 .regis-link {
     margin: 20px auto 35px;

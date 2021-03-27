@@ -24,7 +24,7 @@ class Pragnents extends Component {
             phone: "085467851234",
             ttg: "12 Mei 2000",
             umur: "17",
-            status: "Sehat"
+            status: "normal"
         },
         {
             nama: "Fulan Fulana",
@@ -32,7 +32,7 @@ class Pragnents extends Component {
             phone: "085467851234",
             ttg: "12 Mei 2000",
             umur: "17",
-            status: "Sehat"
+            status: "berpotensi"
         },
         {
             nama: "Fulan Fulana",
@@ -40,7 +40,7 @@ class Pragnents extends Component {
             phone: "085467851234",
             ttg: "12 Mei 2000",
             umur: "17",
-            status: "Sehat"
+            status: "bahaya"
         },
         {
             nama: "Fulan Fulana",
@@ -93,7 +93,7 @@ class Pragnents extends Component {
     ]
     
     render() {
-        let data = this.dummyData.map((d) => <Pragnent data={d}/>  )
+        let data = this.dummyData.map((d, i) => <Pragnent key={i} data={d}/>  )
 
         return (
             <Container>

@@ -6,3 +6,10 @@
 .table-head {
     background-color: blue;
 }
+
+.status-color {
+    text-align: center;
+    color: white;
+    border-radius: 12px;
+    padding: 2px;text-transform: uppercase;
+}
