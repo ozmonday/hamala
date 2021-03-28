@@ -11,89 +11,17 @@ class Pragnents extends Component {
         super(props)
     
         this.state = {
-             
+            users : props.users           
         }
     }
 
     static subStateName = 'Ibu hamil';
 
-    dummyData = [
-        {
-            nama: "Fulan Fulana fulan fulan",
-            alamat: "Jl. Bikini Bottom",
-            phone: "085467851234",
-            ttg: "12 Mei 2000",
-            umur: "17",
-            status: "normal"
-        },
-        {
-            nama: "Fulan Fulana",
-            alamat: "Jl. Bikini Bottom",
-            phone: "085467851234",
-            ttg: "12 Mei 2000",
-            umur: "17",
-            status: "berpotensi"
-        },
-        {
-            nama: "Fulan Fulana",
-            alamat: "Jl. Bikini Bottom",
-            phone: "085467851234",
-            ttg: "12 Mei 2000",
-            umur: "17",
-            status: "bahaya"
-        },
-        {
-            nama: "Fulan Fulana",
-            alamat: "Jl. Bikini Bottom",
-            phone: "085467851234",
-            ttg: "12 Mei 2000",
-            umur: "17",
-            status: "Sehat"
-        },
-        {
-            nama: "Fulan Fulana",
-            alamat: "Jl. Bikini Bottom",
-            phone: "085467851234",
-            ttg: "12 Mei 2000",
-            umur: "17",
-            status: "Sehat"
-        },
-        {
-            nama: "Fulan Fulana",
-            alamat: "Jl. Bikini Bottom",
-            phone: "085467851234",
-            ttg: "12 Mei 2000",
-            umur: "17",
-            status: "Sehat"
-        },
-        {
-            nama: "Fulan Fulana",
-            alamat: "Jl. Bikini Bottom",
-            phone: "085467851234",
-            ttg: "12 Mei 2000",
-            umur: "17",
-            status: "Sehat"
-        },
-        {
-            nama: "Fulan Fulana",
-            alamat: "Jl. Bikini Bottom",
-            phone: "085467851234",
-            ttg: "12 Mei 2000",
-            umur: "17",
-            status: "Sehat"
-        },
-        {
-            nama: "Fulan Fulana",
-            alamat: "Jl. Bikini Bottom",
-            phone: "085467851234",
-            ttg: "12 Mei 2000",
-            umur: "17",
-            status: "Sehat"
-        },
-    ]
+  
     
     render() {
-        let data = this.dummyData.map((d, i) => <Pragnent key={i} data={d}/>  )
+        console.log(this.props.users)
+        let data = this.state.users.map((d, i) => <Pragnent key={i} data={d}/>  )
 
         return (
             <Container>

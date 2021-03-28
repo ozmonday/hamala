@@ -6,10 +6,10 @@ export default function Pragnent(props) {
     
     return (
         <TableRow>
-            <TableCell component="th" scope="row">{data.nama}</TableCell>
-            <TableCell>{data.alamat}</TableCell>
-            <TableCell>{data.phone}</TableCell>
-            <TableCell>{data.ttg}</TableCell>
+            <TableCell component="th" scope="row">{data.name}</TableCell>
+            <TableCell>{data.address}</TableCell>
+            <TableCell>{data.noTelephone}</TableCell>
+            <TableCell>{data.dateOfBirth}</TableCell>
             <TableCell>{data.umur}</TableCell>
             <TableCell><Coloring status={data.status}/></TableCell>
         </TableRow>

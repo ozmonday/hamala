@@ -17,7 +17,10 @@ class Home extends Component {
         super(props)
     
         this.state = {
-            currentMenu : Map.subStateName
+            currentMenu: Map.subStateName,
+            users: [],
+            klinik: {},
+            admin: {},
         }
 
         this.setCurrentMenu = this.setCurrentMenu.bind(this)
@@ -47,7 +50,6 @@ class Home extends Component {
                 users.push(doc.data())
             });
         });
-
         await this.db.collection("admin").doc(`${localStorage.userid}`).get().then((doc) => {
             if (doc.exists) {
                 admin = doc.data();
@@ -73,10 +75,10 @@ class Home extends Component {
         let menu
         switch (title) {
             case Map.subStateName:
-                menu = <Map />;
+                menu = <Map users={this.state.users} center={this.state.klinik}/>;
                 break;
             case Pragnents.subStateName:
-                menu = <Pragnents />;
+                menu = <Pragnents users={this.state.users}/>;
                 break;
             case Dashboard.subStateName:
                 menu = <Dashboard />
@@ -91,10 +93,16 @@ class Home extends Component {
     async componentDidMount() {
         console.log(localStorage.userid)
         let data = await this.loadData()
-        console.log(data)
+        this.setState({
+            klinik: data.klinik,
+            users: data.users,
+            admin : data.admin
+        })
+        //console.log(`latitude :${data.klinik.latitude}, longitude : ${data.klinik.longitude}`)
     }
 
     render() {
+
         return (
             <div>
                 <Grid container >

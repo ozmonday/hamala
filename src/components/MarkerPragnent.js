@@ -30,6 +30,8 @@ export default function MarkerPragnent(props) {
         popupAnchor: [-3, -76],
     })
 
+
+
     return (
         <Marker icon={markericon} position={position} >
             <Popup>
@@ -39,17 +41,17 @@ export default function MarkerPragnent(props) {
                         <tr>
                             <td><div className="col-t">Nama</div></td>
                             <td><div className="col-t">:</div></td>
-                            <td>Santika Devi</td>
+                                <td>{data.name}</td>
                         </tr>
                         <tr>
                             <td><div className="col-t">Umur</div></td>
                             <td><div className="col-t">:</div></td>
-                            <td>15 tahun</td>
+                            <td> tahun</td>
                         </tr>
                         <tr>
                             <td><div className="col-t">Alamat</div></td>
                             <td><div className="col-t">:</div></td>
-                            <td> Jl. Ring Road Utara, Ngringin, Condongcatur, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281</td>
+                            <td>{data.address}</td>
                         </tr>
                         <tr>
                             <td><div className="col-t">Kondisi</div></td>

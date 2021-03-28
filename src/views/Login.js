@@ -35,9 +35,7 @@ export class Login extends Component {
     authentication() {
         const username = this.inputUsename.current.value
         const password = this.inputPassword.current.value
-        // console.log(username)
-        // console.log(password)
-
+  
         this.db.collection("admin").where("username", "==", username).limit(1).get().then((qs) => {
             console.log(qs.docs.length);
             qs.forEach((doc) => {
@@ -49,9 +47,6 @@ export class Login extends Component {
                 }
             });
         });
-       
-        //fiture of auth
-        //window.location = "/"
     }
 
 

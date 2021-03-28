@@ -1,3 +1,16 @@
 export const LOADDATA = 'loadData'
-export const PLUSDATA = 'plusData'
-export const REMOVEDATA = 'removeData'
+
+
+
+const initPragnents = []
+
+export const pragnentReducer = (state = initPragnents, action) => {
+    switch (action.type) {
+        case LOADDATA:
+            
+            break;
+    
+        default:
+            break;
+    }
+}

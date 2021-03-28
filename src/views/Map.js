@@ -9,22 +9,23 @@ export class Map extends Component {
         super(props)
     
         this.state = {
-             currentPosition : [51.505, -0.09] 
+            currentPosition: [-7.2398865011054125, 109.9688044599387],
         }
 
     }
 
     static subStateName = 'Geografis'
 
-    componentDidMount() {
-        //this.locaation.locate()
-    }
+
     
     render() {
+        const position = [this.props.center.latitude, this.props.center.longitude]
+        console.log(`klinik: ${position}`)
+        let markers = this.props.users.map((d, i) => <MarkerPragnent key={i} position={[d.positionLat, d.positionLong]} data={d} />)
         return (
             <MapContainer style={{ width: '100%', height: '91.5vh'}} center={this.state.currentPosition} zoom={13} scrollWheelZoom={false}>
                 <TileLayer attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
-                <MarkerPragnent position={this.state.currentPosition} data={{status: "danger"}}/>
+                {this.props.users.length !== 0 ?  markers : null}
             </MapContainer>
         )
     }
